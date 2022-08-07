@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        .banner{
+            background-image: url("hero.jpg");
+            height: 100vh;
+            background-size: cover;
+            position: relative;
+        }
+        .banner::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+        .navbar{
+            color: white;
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .navbar img {
+            
+        }
+        .navbar ul{
+            list-style: none;
+            display: flex;
+            gap: 60px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .slogan{
+            font-size: 50px;
+            margin: 90px 200px;
+            font-weight: 100;
+        }
+        .buttons{
+            display: flex;
+            gap: 10px;
+        }
+        .buttons{
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="overlay">
+
+        </div>
+        <div class="navbar">
+            <img src="./Copy of logo-white.png" alt="Logo">
+            <ul>
+                <Li>Sign in</Li>
+                <Li>How it work</Li>
+                <Li>Our cities</Li>
+                <Li>Sign up</Li>
+            </ul>
+        </div>
+        <div class="Slogan">
+            <p>
+                Goodbye junk food. <br>
+                Hello super healthy meal.
+            </p>
+            <div class="buttons">
+                <button>I'm hungry</button>
+                <button>Show me more</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
